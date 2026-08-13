@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlobalPharma | Pharmacy Information Portal</title>
+
+    <meta name="description"
+          content="GlobalPharma - Your trusted pharmacy information portal for medicine information.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">⚕</span>
+            <span>Global<span>Pharma</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#medicines">Medicines</a>
+            <a href="#search">Search</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <div class="hero-badge">
+                🩺 Pharmacy Information Portal
+            </div>
+
+            <h1>
+                Your Trusted
+                <span>Pharmacy</span>
+                Information Portal
+            </h1>
+
+            <p>
+                Search medicines and learn about their basic uses,
+                ingredients, precautions and safety information.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#search" class="btn btn-primary">
+                    🔍 Search Medicine
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    📞 Contact Us
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="medical-symbol">⚕</div>
+
+            <h3>Medicine Information</h3>
+
+            <p>
+                Find basic educational information about
+                tablets, capsules, syrups and more.
+            </p>
+
+            <div class="hero-stat">
+                <strong>8+</strong>
+                <span>Demo Medicines</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section" id="search">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>FIND MEDICINES</span>
+            <h2>Search Medicine Information</h2>
+            <p>
+                Enter a medicine name or select a category to explore
+                available information.
+            </p>
+        </div>
+
+        <div class="search-box">
+
+            <div class="search-input-wrapper">
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="medicineSearch"
+                    placeholder="Search medicines, tablets, syrups..."
+                    autocomplete="off"
+                >
+
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+
+            <button class="btn btn-primary" id="searchButton">
+                Search Medicine
+            </button>
+
+        </div>
+
+        <div class="categories" id="categories">
+
+            <button class="category-btn active" data-category="All">
+                All
+            </button>
+
+            <button class="category-btn" data-category="Tablet">
+                💊 Tablets
+            </button>
+
+            <button class="category-btn" data-category="Capsule">
+                💊 Capsules
+            </button>
+
+            <button class="category-btn" data-category="Syrup">
+                🧴 Syrups
+            </button>
+
+            <button class="category-btn" data-category="ORS">
+                💧 ORS
+            </button>
+
+            <button class="category-btn" data-category="Antacid">
+                🩺 Antacids
+            </button>
+
+        </div>
+
+        <div id="resultsInfo" class="results-info"></div>
+
+        <div id="medicineResults" class="medicine-grid"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>WHY GLOBALPHARMA?</span>
+            <h2>Simple. Informative. Easy to Use.</h2>
+        </div>
+
+        <div class="features">
+
+            <div class="feature-card">
+                <div class="feature-icon">🔎</div>
+                <h3>Easy Search</h3>
+                <p>
+                    Quickly search medicines using their names or categories.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Useful Information</h3>
+                <p>
+                    Explore basic educational information about medicines.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>
+                    Access the website comfortably from mobile, tablet or desktop.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👨‍⚕️</div>
+                <h3>Safety First</h3>
+                <p>
+                    Information is accompanied by an important medical disclaimer.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container about-container">
+
+        <div class="about-image">
+            <div class="about-symbol">⚕</div>
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-label">ABOUT GLOBALPHARMA</span>
+
+            <h2>
+                Making Medicine Information
+                Easy to Explore
+            </h2>
+
+            <p>
+                GlobalPharma is a college mini-project pharmacy
+                information portal designed to help users find basic
+                educational information about medicines and pharmacy
+                products.
+            </p>
+
+            <p>
+                Users can search for medicines, explore categories,
+                and view information such as ingredients, common uses,
+                storage information and general precautions.
+            </p>
+
+            <div class="about-points">
+                <div>✓ Simple medicine search</div>
+                <div>✓ Category-based filtering</div>
+                <div>✓ Responsive design</div>
+                <div>✓ Educational information</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    What is GlobalPharma?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        GlobalPharma is a college mini-project website
+                        that provides basic educational information about
+                        medicines and pharmacy products.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I search for a medicine?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Enter the medicine name in the search box and
+                        click the Search Medicine button. You can also
+                        filter medicines by category.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Is GlobalPharma medical advice?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        No. The information on this website is for general
+                        educational purposes and is not a substitute for
+                        professional medical advice.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Should I consult a doctor before taking medicine?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. Always consult a qualified doctor or pharmacist
+                        before using medicine, especially prescription medicines.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ENQUIRY ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container contact-container">
+
+        <div class="contact-info">
+
+            <span class="section-label">GET IN TOUCH</span>
+
+            <h2>Have a Medicine Enquiry?</h2>
+
+            <p>
+                For general medicine enquiries, contact GlobalPharma.
+            </p>
+
+            <div class="phone-card">
+
+                <div class="phone-icon">📞</div>
+
+                <div>
+                    <small>For Medicine Enquiries, Call Us</small>
+
+                    <a href="tel:+919880571321">
+                        +91 9880571321
+                    </a>
+                </div>
+
+            </div>
+
+            <a href="tel:+919880571321" class="btn btn-primary call-button">
+                📞 Call Us Now
+            </a>
+
+        </div>
+
+
+        <div class="enquiry-form-container">
+
+            <h3>Send an Enquiry</h3>
+
+            <form id="enquiryForm">
+
+                <div class="form-group">
+
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter phone number"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="product">
+                        Medicine/Product Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="product"
+                        placeholder="Enter medicine name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Enter your enquiry"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">
+                    Submit Enquiry
+                </button>
+
+                <div id="formMessage"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DISCLAIMER ================= -->
+
+<section class="disclaimer">
+
+    <div class="container">
+
+        <div class="disclaimer-icon">⚠️</div>
+
+        <div>
+            <h3>Important Medical Disclaimer</h3>
+
+            <p>
+                The information provided on GlobalPharma is for general
+                educational purposes only and is not a substitute for
+                professional medical advice, diagnosis, or treatment.
+                Always consult a qualified doctor or pharmacist before
+                taking any medicine.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-container">
+
+        <div class="footer-about">
+
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">⚕</span>
+                <span>Global<span>Pharma</span></span>
+            </a>
+
+            <p>
+                Your trusted pharmacy information portal for educational
+                medicine information.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#medicines">Medicines</a>
+            <a href="#search">Search</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Contact</h3>
+
+            <a href="tel:+919880571321">
+                📞 +91 9880571321
+            </a>
+
+            <p>Email: example@email.com</p>
+
+            <p>Address: Your Address</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 GlobalPharma. All Rights Reserved.
+        </p>
+
+        <p>
+            College Mini Project | Educational Purpose Only
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= MEDICINE MODAL ================= -->
+
+<div id="medicineModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" id="closeModal">
+            ×
+        </button>
+
+        <div id="medicineDetails"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="backToTop" class="back-to-top">
+    ↑
+</button>
+
+
+<script src="medicines.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
